@@ -13,4 +13,6 @@ ADD .ipython /root/.ipython
 add confs /confs
 
 ENV SPARK_OPTS "--properties-file=/confs/default.conf"
+RUN mkdir /notebooks
+WORKDIR /notebooks
 ENTRYPOINT ["ipython", "notebook", "--ip", "0.0.0.0"]
