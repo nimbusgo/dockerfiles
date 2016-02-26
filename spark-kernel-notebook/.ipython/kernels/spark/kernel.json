@@ -1,0 +1,12 @@
+{
+    "display_name": "Spark 1.6.0 (Scala 2.10.4)",
+    "language_info": { "name": "scala" },
+    "argv": [
+        "/spark-kernel/bin/spark-kernel",
+        "--profile",
+        "{connection_file}",
+        "--ip",
+        "0.0.0.0"
+    ],
+    "codemirror_mode": "scala"
+}
