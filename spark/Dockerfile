@@ -46,6 +46,7 @@ ENV PATH $PATH:/root/anaconda2/bin
 ENV PYTHONPATH $SPARK_HOME/python
 RUN pip install py4j
 
+RUN hadoop namenode -format
 ADD spark-defaults.conf $SPARK_HOME/conf/
 ADD scripts /scripts
 RUN chmod +x /scripts/*
